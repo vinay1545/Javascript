@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let container=document.createElement("div")
+        let main=document.createElement("div")
+     let a=document.createElement("h1")
+     console.log(a)
+     let b=document.createElement("div")
+     console.log(b)
+     let b1=document.createElement("span")
+     let b2=document.createElement("span")
+     let b3=document.createElement("hr")
+     a.innerText="G.VENKATA VINAY BABU"
+     a.style.color="blue"
+     a.style.paddingLeft="30%"
+     b.style.display="flex"
+     b.style.justifyContent="space-between"
+     b1.innerText="Phone:1234567890"
+     b2.innerText="mail:mrvinay66@gmail.com"
+     b.append(b1,b2,)
+     main.append(a,b3,b)
+
+
+     let main2=document.createElement("div")
+
+     let c=document.createElement("h3")
+     console.log(c)
+     let c1=document.createElement("p")
+     console.log(c1)
+     c.innerText="Summary"
+     c.style.backgroundColor="skyblue"
+     c1.innerText="As a passionate and dedicated graduate, I aim to leverage my skills in both front-end and back-end technologies to develop robust and scalable web applications. I seek to apply my knowledge of programming languages, frameworks, and database management in a dynamic environment, where I can contribute to innovative projects and grow as a full-stack developer. Eager to work in a collaborative team setting, I am committed to enhancing my technical expertise while delivering high-quality solutions that meet user needs and business objectives."
+     main2.append(c,c1)
+
+     let main3=document.createElement("div")
+     console.log(main3)
+     let d=document.createElement("div")
+     let d0=document.createElement("h3")
+     console.log(d)
+     d0.innerText="Technical skills:"
+     d0.style.backgroundColor="skyblue"
+     let d1=document.createElement("ul")
+     let d2=document.createElement("li")
+     let d3=document.createElement("li")
+     let d4=document.createElement("li")
+    d2.innerText="Frontend: HTML,CSS,Javascript"
+    d3.innerText="Backend: Python"
+    d4.innerText="Database: SQL"
+
+     d1.append(d2,d3,d4)
+     d.append(d0,d1,d2,d3,d4)
+     main3.append(d)
+
+
+     let main4=document.createElement("div")
+     console.log(main4)
+     let e=document.createElement("div")
+     let e0=document.createElement("h3")
+     console.log(e)
+     let e1=document.createElement("ul")
+     let e2=document.createElement("li")
+     let e11=document.createElement("p")
+
+     let e3=document.createElement("li")
+     let e12=document.createElement("p")
+     let e4=document.createElement("li")
+     let e13=document.createElement("p")
+     e0.innerText="Educational Details:"
+     e0.style.backgroundColor="skyblue"
+     e2.innerText="B.Tech(ECE),Usha Rama College of Engineering and Technology  -CGPA:8.4"
+     e11.innerText="2021-2025"
+     e3.innerText="Intermediate,Narayana Junior College   -Percentage:94.7%"
+     e12.innerText="2019-2021"
+     e4.innerText="SSC,Vidyalaya High School   -CGPA:9.8"
+     e13.innerText="2018-2019"
+     e.append(e0,e1,e2,e11,e3,e12,e4,e13)
+     
+     main4.append(e)
+
+
+     let main5=document.createElement("div")
+     console.log(main5)
+     let f=document.createElement("h3")
+     let f1=document.createElement("h4")
+     let f2=document.createElement("p")
+     f.innerText="Projects:"
+     f.style.backgroundColor="skyblue"
+     f1.innerText="Lightening Enhancement of Underwater Images Using CHIO"
+     f2.innerText="Underwater Imaging Challenges:Light absorption, scattering, and floating micro-particles cause poor image quality, leading to low contrast, blurriness, and color distortion in underwater images.The study proposes a new enhancement technique using the Coronavirus Herd Immunity Optimizer (CHIO) algorithm to improve underwater image quality by enhancing contrast, restoring details, and reducing distortionThe proposed CHIO-UIE method demonstrates significant improvements in both quantitative and qualitative evaluations, enhancing the visual quality of underwater images across various marine environments."
+
+      main5.append(f,f1,f2)
+    
+
+    let main6=document.createElement("div")
+    console.log(main6)
+    let g=document.createElement("h3")
+    let g1=document.createElement("ul")
+    let g2=document.createElement("li")
+    let g3=document.createElement("li")
+    let g4=document.createElement("li")
+    let g5=document.createElement("li")
+
+    g.innerText="Softskills"
+    g.style.backgroundColor="skyblue"
+    g2.innerText="Communication skills"
+    g3.innerText="Time Management"
+    g4.innerText="Leadership"
+    g5.innerText="Problem solving"
+
+    main6.append(g,g1,g2,g3,g4,g5)
+
+
+    let main7=document.createElement("div")
+    console.log(main7)
+    let h=document.createElement("h3")
+    let h1=document.createElement("ul")
+    let h2=document.createElement("li")
+    let h3=document.createElement("li")
+    let h4=document.createElement("li")
+
+    h.innerText="Certifications"
+    h.style.backgroundColor="skyblue"
+    h2.innerText="Artificial intelligence and Cybersecurity-AICTE"
+    h3.innerText="System Design through Verilog-NPTEL"
+    h4.innerText="Python certification by SCALER"
+
+    main7.append(h,h1,h2,h3,h4)
+    container.append(main,main2,main3,main4,main5,main6,main7)
+    container.style.backgroundColor="pink"
+    container.style.marginLeft="10%"
+    container.style.marginRight="10%"
+
+     
+document.body.append(container)
+
+    </script>
+</body>
+</html>
