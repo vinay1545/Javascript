@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+
+let a=document.createElement("header")
+console.log(a)
+let a1=document.createElement("nav")
+let a11=document.createElement("div")
+let a2=document.createElement("h3")
+let a22=document.createElement("div")
+let a3=document.createElement("h4")
+let a4=document.createElement("h4")
+let a5=document.createElement("h4")
+a2.innerText="BR Architects"
+a3.innerText="Projects"
+a4.innerText="About"
+a5.innerText="Contact"
+a1.style.display="flex"
+a1.style.justifyContent="space-between"
+a22.style.display="flex"
+a22.style.gap="100px"
+a22.style.marginRight="20px"
+// a1.style.backgroundColor=""
+a2.style.marginLeft="20px"
+a1.style.position="fixed"
+a1.style.zIndex="99"
+a1.style.backgroundColor="white"
+a1.style.width="100%"
+
+
+a22.append(a3,a4,a5)
+a11.append(a2)
+a1.append(a11,a22)
+a.append(a1)
+
+
+
+
+let b=document.createElement("div")
+let b1=document.createElement("img")
+b1.setAttribute("src","https://www.w3schools.com/w3images/architect.jpg")
+b.append(b1)
+
+document.body.append(a,b)
+let c=document.createElement("div")
+let c1=document.createElement("h3")
+let c2=document.createElement("hr")
+c1.innerText="Projects"
+c.append(c1,c2)
+document.body.append(c)
+
+
+
+    d = document.createElement('div')
+        d.style.display = 'flex'
+        d.style.gap = '3vw'
+        d.style.flexWrap = 'wrap'
+        arr = ["https://www.w3schools.com/w3images/house5.jpg", "https://www.w3schools.com/w3images/house2.jpg", "https://www.w3schools.com/w3images/house3.jpg", "https://www.w3schools.com/w3images/house4.jpg", "https://www.w3schools.com/w3images/house2.jpg", "https://www.w3schools.com/w3images/house5.jpg", "https://www.w3schools.com/w3images/house4.jpg", "https://www.w3schools.com/w3images/house3.jpg"]
+        Content = ['Summer House', 'Brick House', 'Renovated', 'BanHouse', 'Summer House', 'Brick House', 'Renovated', 'BanHouse']
+        for (i = 0; i < 8; i++) {
+            d1 = document.createElement('div')
+            d2 = document.createElement('h4')
+            d2.innerHTML = Content[i]
+            d3 = document.createElement('img')
+            d3.style.width = '22vw'
+            d3.style.height = '30vh'
+            d3.src = arr[i]
+            d1.append(d2, d3)
+            d.append(d1)
+        }
+        document.body.append(d)
+
+
+
+
+
+        e = document.createElement('h3')
+        e.innerHTML = 'About'
+        e1 = document.createElement('hr')
+
+        e2 = document.createElement('p')
+        e2.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        document.body.append(e, e1, e2)
+
+
+        f = document.createElement('div')
+        f.style.display = 'flex'
+        f.style.gap = '5vw'
+        arr3 = ["https://www.w3schools.com/w3images/team2.jpg", "https://www.w3schools.com/w3images/team1.jpg", 'https://www.w3schools.com/w3images/team3.jpg', "https://www.w3schools.com/w3images/team4.jpg"]
+        cont = ['John Doe', 'Jane Doe', 'Mike Ross', 'Dan Star']
+        for (i = 0; i < 4; i++) {
+            f1 = document.createElement('div')
+            f1.style.width = '20vw'
+            f2 = document.createElement('img')
+            f2.src = arr3[i]
+            f2.style.width = '22vw'
+            f2.style.height = '25vh'
+            f3 = document.createElement('h3')
+            f3.innerHTML = cont[i]
+            f4 = document.createElement('p')
+            f4.innerHTML = 'CEO & fOUNDER'
+            f5 = document.createElement('p')
+            f5.innerHTML = 'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.'
+            f6 = document.createElement('p')
+            f6.innerHTML = 'Contact'
+            f1.append(f2, f3, f4, f5, f6)
+            f.appendChild(f1)
+
+            document.body.append(f)
+        }
+
+        g = document.createElement('h3')
+        g.innerHTML = 'Contact'
+        g1 = document.createElement('hr')
+        g2 = document.createElement('p')
+        g2.innerHTML = 'Lets get in touch and talk about your next project.'
+        g3 = document.createElement('input')
+        g3.style.width = '100%'
+        g3.style.padding="10px"
+        g3.style.marginBottom="5px"
+        g3.setAttribute('placeholder', 'Name')
+        da1 = document.createElement('br')
+        g4 = document.createElement('input')
+        g4.style.width = '100%'
+        g4.style.padding="10px"
+        g4.style.marginBottom="5px"
+        g4.setAttribute('placeholder', 'Email')
+        da2 = document.createElement('br')
+        g5 = document.createElement('input')
+        g5.style.width = '100%'
+        g5.style.padding="10px"
+        g5.style.marginBottom="5px"
+        g5.setAttribute('placeholder', 'Subject')
+        da3 = document.createElement('br')
+        g6 = document.createElement('input')
+        g6.style.width = '100%'
+        g6.style.padding="10px"
+        g6.style.marginBottom="5px"
+        g6.setAttribute('placeholder', 'Comment')
+        da4 = document.createElement('br')
+
+
+        document.body.append(g, g1, g2, g3, da1, g4, da2, g5, da3, g6, da4)
+        h = document.createElement('button')
+        h.style.background = 'blue'
+        h.style.color = 'white'
+        h.style.marginTop = '2vh'
+        h.innerHTML = 'SEND MESSAGE'
+        document.body.append(h)
+     
+
+        L=document.createElement("div")
+        L1 = document.createElement('img')
+        L1.src = 'https://www.w3schools.com/w3images/map.jpg'
+        L1.style.width = '100%'
+        L1.style.marginTop = '5vh'
+        L.append(L1)
+        document.body.append(L)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
